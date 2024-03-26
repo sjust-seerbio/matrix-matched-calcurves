@@ -38,6 +38,8 @@ def bench_process_nonquant_peptide(calculate_loq, subset):
         subset.iloc[0]["peptide"],
         False,  # plot_or_not
         2.0,  # std mult
+        calculate_loq.DEFAULT_MIN_NOISE_POINTS,
+        calculate_loq.DEFAULT_MIN_LINEAR_POINTS,
         subset,
         False
     )
