@@ -561,5 +561,7 @@ def main():
             peptide_fom = pd.concat([peptide_fom, future.result()], ignore_index=True, axis=0)
 
     peptide_fom.to_csv(path_or_buf=os.path.join(output_dir, 'figuresofmerit.csv'),
-                       index=False)if __name__ == "__main__":
-    main()
+                       index=False)
+
+    if __name__ == "__main__":
+        main()
